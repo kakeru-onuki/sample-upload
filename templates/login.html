@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>入力ホーム</h1>
+    <form  method="post" action="/login">
+      {%csrf_token%}
+      <input placeholder="名前" name="username" type="text"/>
+      <input placeholder="メール" name="email" type="text"/>
+      <input  value="送信" type="submit"/>
+    </form>
+  </body>
+</html>
